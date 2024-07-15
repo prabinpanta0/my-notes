@@ -50,7 +50,7 @@ Let's randomly select initial centroids. Let's say we have *c~1~ = 3* and *c~2~ 
   
 *calculating the centroids according to Assigned data points:*  
   
-* $$ c_1 = \frac{2 + 3 + 8}{3} = \frac{13}{3} \approx 4.33$$  
+* $$c_1 = \frac{2 + 3 + 8}{3} = \frac{13}{3} \approx 4.33$$  
   
 * $$c_2 = \frac{10 + 15 + 18}{3} = \frac{43}{3} \approx 14.33$$  
   
@@ -71,7 +71,7 @@ Let's randomly select initial centroids. Let's say we have *c~1~ = 3* and *c~2~ 
 * __Cluster 2__= {10, 15, 18}  
 
   *Re-calculating the centroid based on new assigned datapoint:*
-* $$ c_1 = \frac{2 + 3 + 8}{3} = \frac{13}{3} \approx 4.33$$  
+* $$c_1 = \frac{2 + 3 + 8}{3} = \frac{13}{3} \approx 4.33$$  
   
 * $$c_2 = \frac{10 + 15 + 18}{3} = \frac{43}{3} \approx 14.33$$  
 
@@ -82,14 +82,11 @@ Let's randomly select initial centroids. Let's say we have *c~1~ = 3* and *c~2~ 
 
 * __Cluster 2__: {10,15,18} with centroid approximately 14.33
 
-[^bignote]: __Euclidean Distance Formula:__  
-$$d(x,c) = \sqrt{\sum_{i =1}^{n} (x_i -c_i)^2} $$
+[^bignote]: **Euclidean Distance Formula:**  
+d(x,c) = &radic;(&sum;<sup>n</sup><sub>i=1</sub> (x<sub>i</sub> - c<sub>i</sub>)<sup>2</sup>)
 
-    * where:
-    * __*d(x,y)*__: This denotes the Euclidean distance bet^n^ 2 points __*x*__, __*c*__.  
-
-    * __*x*__: represents a data point in __n__-dimensional space. In other words, __x = {x~1~, x~2~, x~3~,....,x~n~}__  
-
-    * __*c*__: Represents a centroid or another datapoint that serves as a refences point in the same __*n*__-dimensional space. Similar to __*x*__, __c = {c~1~, c~2~, c~3~,....,c~n~}__  
-
-    * __*i*__: This is an index that ranges from 1 to __*n*__, representing each component or feature of the data points __*x*__ and __*c*__.
+    where:
+    * **_d(x,c)_**: This denotes the Euclidean distance between two points **_x_** and **_c_**.  
+    * **_x_**: represents a data point in **n**-dimensional space. In other words, **x = {x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>,....,x<sub>n</sub>}**  
+    * **_c_**: Represents a centroid or another data point that serves as a reference point in the same **_n_**-dimensional space. Similar to **_x_**, **c = {c<sub>1</sub>, c<sub>2</sub>, c<sub>3</sub>,....,c<sub>n</sub>}**  
+    * **_i_**: This is an index that ranges from 1 to **_n_**, representing each component or feature of the data points **_x_** and **_c_**.
