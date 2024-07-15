@@ -76,6 +76,7 @@ Let's randomly select initial centroids. Let's say we have *c~1~ = 3* and *c~2~ 
 * $$c_2 = \frac{10 + 15 + 18}{3} = \frac{43}{3} \approx 14.33$$  
 
 *Since the assignments did not change, the algorithm has converged.*
+
 *Final Cluster:*
 
 * __Cluster 1__: {2,3,8} with centroid approximately 4.33
