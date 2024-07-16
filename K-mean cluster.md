@@ -31,17 +31,17 @@ style E fill:#BB3559,stroke:white,stroke-width:2px;
 
 __Q1. {2, 3, 8, 10, 15, 18}__  
 Suppose we have *k = 2*,  
-Let's randomly select initial centroids. Let's say we have *c~1~ = 3* and *c~2~ = 15*.  
+Let's randomly select initial centroids. Let's say we have *C<sub>1</sub> = 3* and *C<sub>2</sub> = 15*.  
   
 *Assigning data points to clusters:*  
-|Data Points | d(x, c~1~) = d(x,3) |d(x, c~2~) = d(x,15)| Nearest centroid|
+|Data Points | d(x, C<sub>1</sub>) = d(x,3) |d(x, C<sub>2</sub>) = d(x,15)| Nearest centroid|
 |--|--|--|--|
-| 2 | 1 | 13 | C~1~ |
-| 3 | 0 | 12 | C~1~ |
-| 8 | 5 | 7 | C~1~ |
-| 10 | 7 | 5 | C~2~ |
-| 15 | 12 | 0 | C~2~ |
-| 18 | 15 | 3 | C~2~|
+| 2 | 1 | 13 | C<sub>1</sub> |
+| 3 | 0 | 12 | C<sub>1</sub> |
+| 8 | 5 | 7 | C<sub>1</sub> |
+| 10 | 7 | 5 | C<sub>2</sub> |
+| 15 | 12 | 0 | C<sub>2</sub> |
+| 18 | 15 | 3 | C<sub>2</sub>|
   
 *Assignments based on initial centroids:*  
 
@@ -50,19 +50,19 @@ Let's randomly select initial centroids. Let's say we have *c~1~ = 3* and *c~2~ 
   
 *calculating the centroids according to Assigned data points:*  
   
-* $$c_1 = \frac{2 + 3 + 8}{3} = \frac{13}{3} \approx 4.33$$  
+* $$C_1 = \frac{2 + 3 + 8}{3} = \frac{13}{3} \approx 4.33$$  
   
-* $$c_2 = \frac{10 + 15 + 18}{3} = \frac{43}{3} \approx 14.33$$  
+* $$C_2 = \frac{10 + 15 + 18}{3} = \frac{43}{3} \approx 14.33$$  
   
 *Assigning data points according to updated clusters*  
-|Data Points | d(x, c~1~) = d(x,4.33) |d(x, c~2~) = d(x,14.33)| Nearest centroid |
+|Data Points | d(x, C<sub>1</sub>) = d(x,4.33) |d(x, C<sub>2</sub>) = d(x,14.33)| Nearest centroid |
 |--|--|--|--|  
-| 2 | 2.33 | 12.33 | C~1~ |  
-| 3 | 1.33 | 11.33 | C~1~ |  
-| 8 | 3.67 | 6.33 | C~1~ |  
-| 10 | 5.67 | 4.33 | C~2~ |  
-| 15 | 10.67 | 0.67 | C~2~ |  
-| 18 | 13.67 | 3.67 | C~2~|  
+| 2 | 2.33 | 12.33 | C<sub>1</sub> |  
+| 3 | 1.33 | 11.33 | C<sub>1</sub> |  
+| 8 | 3.67 | 6.33 | C<sub>1</sub> |  
+| 10 | 5.67 | 4.33 | C<sub>2</sub> |  
+| 15 | 10.67 | 0.67 | C<sub>2</sub> |  
+| 18 | 13.67 | 3.67 | C<sub>2</sub>|  
 
 *Assignments based on updated centroids:*  
 
@@ -71,9 +71,9 @@ Let's randomly select initial centroids. Let's say we have *c~1~ = 3* and *c~2~ 
 * __Cluster 2__= {10, 15, 18}  
 
   *Re-calculating the centroid based on new assigned datapoint:*
-* $$c_1 = \frac{2 + 3 + 8}{3} = \frac{13}{3} \approx 4.33$$  
+* $$C_1 = \frac{2 + 3 + 8}{3} = \frac{13}{3} \approx 4.33$$  
   
-* $$c_2 = \frac{10 + 15 + 18}{3} = \frac{43}{3} \approx 14.33$$  
+* $$C_2 = \frac{10 + 15 + 18}{3} = \frac{43}{3} \approx 14.33$$  
 
 *Since the assignments did not change, the algorithm has converged.*
 
